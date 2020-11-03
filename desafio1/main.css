@@ -1,0 +1,11 @@
+:root {
+    --primary-color: #003a6c;
+    --secondary-color: #002e56;
+    --white-color: #fafafa;
+    --primary-bg-color: #f1f0ea;
+    --background-color: #dadd1d ;
+  }
+  
+  * {
+    font-family: "Open Sans", sans-serif;
+  }

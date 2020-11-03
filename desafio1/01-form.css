@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #f1f0ea;
+ }
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:  #003a6c;
+}
+.navbar li {
+ float: right;
+
+}
+.navbar li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#formulario{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    align-items: center;
+  
+
+}
+div{
+    align-content: center;
+    
+}
+input {
+    text-align: center;
+    height: 40px;
+    width: 100px;
+}
+#correo{
+    width: 100%;
+    background-color: white;
+    margin-bottom: 5px;
+    
+}
+#boton{
+    width: 100%;
+    background: #003a6c;
+    color: white;
+}
+footer{
+    position: fixed;
+    left: 0 ;
+    bottom: 5%;
+    width: 100%;
+    text-align: center;
+
+}
+
