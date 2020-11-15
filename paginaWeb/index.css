@@ -1,0 +1,155 @@
+html{
+    background-color:  #343a40;
+}
+body{
+    background-color:  #343a40;
+}
+
+nav .navbar{
+    background-color: black;
+    text-align: center;
+    
+}
+.card-title{
+    padding-top: 50px;
+}
+
+#carousel{
+    background-color: #343a40;
+    
+}
+
+#cardd img{
+    width: 150px;
+    height: 300px;
+    border: 1px solid  #343a40;
+    display:flex;
+    align-items: center;
+
+
+}
+#cardd .card{
+    padding-top: 5px;
+}
+#imagen{
+    padding-top: 30px;
+    margin-left: 15px;
+    align-items: center;
+
+}
+#Galeria{
+    background-color: #343a40;
+    padding-top: 100px;
+}
+#Galeria h3{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    padding: 70px;
+    
+}
+#Galeria .row{
+    padding-left: 10px;
+}
+#Galeria h4{
+    color: black;
+}
+div .card.row {
+    background-color: #302e2e;
+}
+div .card-text{
+    color: rgb(0, 0, 0);
+    display:block ;
+    text-align: justify;
+    margin-right: 59px;
+    
+
+}  
+section#contacto {
+  padding-top: 100px;
+  padding: 70px;
+  background-color: #212529;
+  background-image: url("img/map-image.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+section#contacto .section-heading {
+  color: #fff;
+}
+section#contacto form#contactForm .form-group {
+  margin-bottom: 1.5rem;
+}
+section#contacto form#contactForm .form-group input,
+section#contacto form#contactForm .form-group textarea {
+  padding: 1.25rem;
+}
+section#contacto form#contactForm .form-group input.form-control {
+  height: auto;
+}
+section#contacto form#contactForm .form-group-textarea {
+  height: 100%;
+}
+section#contacto form#contactForm .form-group-textarea textarea {
+  height: 100%;
+  min-height: 10rem;
+}
+section#contacto form#contactForm p.help-block {
+  margin: 0;
+}
+section#contacto form#contactForm .form-control:focus {
+  box-shadow: none;
+}
+section#contacto form#contactForm ::-webkit-input-placeholder {
+  font-weight: 700;
+  color: #ced4da;
+}
+section#contacto form#contactForm :-moz-placeholder {
+  font-weight: 700;
+  color: #ced4da;
+}
+section#contacto form#contactForm ::-moz-placeholder {
+ font-weight: 700;
+  color: #ced4da;
+}
+section#contacto form#contactForm :-ms-input-placeholder {
+  font-weight: 700;
+  color: #ced4da;
+}
+.pagination{
+    padding: 70px;
+
+}
+footer {
+    
+    padding-top: 50px;
+    text-align: center;
+    font-size: 0.9rem;
+    background-color: #343a40;
+}
+footer #img{
+    padding-left: 80px;
+    left: 80px;
+}
+#carta .card{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+#letras{
+    padding: 30px;
+    padding-top: 40px;
+}
+#carta .card-text{
+    text-align: start;
+    color: white;
+    padding-right: 15px;
+    font-size: 16px;
+
+}
+#carta .list-group{
+    text-decoration-color: white;
+}
+
