@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="eS">
+
+<head>
+    <title>Ejemplo 1 JS</title>
+    <meta charset="UTF-8">
+    <!-- Enlazamos los estilos CSS-->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <!-- Creamos un DIV para contener el formulario -->
+    <div id="form">
+        <span>Ingrese dos numeros y se mostrara un numero dentro del rango</span>
+        <!-- Creamos dos input para recuperar los datos
+ingresados por el usuario -->
+        <input id="input-uno" type="number" min="1" max="5" step="0">
+        <input id="input-dos" type="number" min="5" max="9" step="0" >
+        <!-- Creamos un botón con el fin de invocar la suma -->
+        <button id="btn">ingresar</button>
+    </div>
+    <!-- Creamos in DIV que permita mostrar el resultado de la suma -->
+    <div id="resultado"></div>
+    <!-- Enlazamos el código JS -->
+    <script src="codigo.js"></script>
+</body>
+
+</html>
