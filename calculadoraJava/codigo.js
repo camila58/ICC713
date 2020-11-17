@@ -1,65 +1,113 @@
-// Obtenemos el button y lo almacenamos en una variable llamada "btn"
-var btnSuma = document.getElementById("btn-sumar");
-var btnResta = document.getElementById("btn-restar");
-var btnDivision = document.getElementById("btn-dividir");
-var btnMultiplicar = document.getElementById("btn-multiplicar");
+var operandoa;
+var operandob;
+var operacion;
+
+function init() {
+    //variable de resultados
+    var resultado = document.getElementById("resultado");
+    var reset = document.getElementById("reset");
+    var suma = document.getElementById("suma");
+    var resta = document.getElementById("resta");
+    var multiplicacion = document.getElementById("multiplicacion");
+    var division = document.getElementById("division");
+    var igual = document.getElementById("igual");
+    var uno = document.getElementById("uno");
+    var dos = document.getElementById("dos");
+    var tres = document.getElementById("tres");
+    var cuatro = document.getElementById("cuatro");
+    var cinco = document.getElementById("cinco");
+    var seis = document.getElementById("seis");
+    var siete = document.getElementById("siete");
+    var ocho = document.getElementById("ocho");
+    var nueve = document.getElementById("nueve");
+    var cero = document.getElementById("cero");
 
 
+    //Eventos
+    uno.onclick = function (e) {
+        resultado.textContent = resultado.textContent + "1";
+    }
+    dos.onclick = function (e) {
+        resultado.textContent = resultado.textContent + "2";
+    }
+    tres.onclick = function (e) {
+        resultado.textContent = resultado.textContent + "3";
+    }
+    cuatro.onclick = function (e) {
+        resultado.textContent = resultado.textContent + "4";
+    }
+    cinco.onclick = function (e) {
+        resultado.textContent = resultado.textContent + "5";
+    }
+    seis.onclick = function (e) {
+        resultado.textContent = resultado.textContent + "6";
+    }
+    siete.onclick = function (e) {
+        resultado.textContent = resultado.textContent + "7";
+    }
+    ocho.onclick = function (e) {
+        resultado.textContent = resultado.textContent + "8";
+    }
+    nueve.onclick = function (e) {
+        resultado.textContent = resultado.textContent + "9";
+    }
+    cero.onclick = function (e) {
+        resultado.textContent = resultado.textContent + "0";
+    }
+    reset.onclick = function (e) {
+        resetear();
+    }
+    suma.onclick = function (e) {
+        operandoa = resultado.textContent;
+        operacion = "+";
+        limpiar();
+    }
+    resta.onclick = function (e) {
+        operandoa = resultado.textContent;
+        operacion = "-";
+        limpiar();
+    }
+    multiplicacion.onclick = function (e) {
+        operandoa = resultado.textContent;
+        operacion = "*";
+        limpiar();
+    }
+    division.onclick = function (e) {
+        operandoa = resultado.textContent;
+        operacion = "/";
+        limpiar();
+    }
+    igual.onclick = function (e) {
+        operandob = resultado.textContent;
+        resolver();
+    }
+}
+function limpiar() {
+    resultado.textContent= "";
+}
+function resetear() {
+    resultado.textContent = "";
+    operandoa = 0;
+    operandob = 0;
+    operacion = "";
+}
+function resolver() {
+    var res = 0;
+    switch (operacion) {
+        case "+":
+            res = parseFloat(operandoa) + parseFloat(operandob);
+            break;
+        case "-":
+            res = parseFloat(operandoa) - parseFloat(operandob);
+            break;
+        case "*":
+            res = parseFloat(operandoa) * parseFloat(operandob);
+            break;
+        case "/":
+            res = parseFloat(operandoa) / parseFloat(operandob);
+            break;
+    }
+    resetear();
+    resultado.textContent = res;
 
-var resultado = document.getElementById("resultado")
-
-var inputUno = document.getElementById("input-uno");
-var inputDos = document.getElementById("input-dos");
-// Añadimos el evento click a la variable "btn"
-
-switch (addEventListener) {
-    case btnSuma.addEventListener("click"):
-        btnSuma.addEventListener("click", function () {
-            var n1 = inputUno.value;
-            var n2 = inputDos.value;
-            resultado.innerHTML = suma(n1, n2);
-        });
-        function suma(n1, n2) {
-
-            return parseInt(n1) + parseInt(n2);
-        }
-
-
-        break
-    case btnResta.addEventListener("click"):
-        btnResta.addEventListener("click", function () {
-            var n1 = inputUno.value;
-            var n2 = inputDos.value;
-            resultado.innerHTML = resta(n1, n2);
-        });
-        function resta(n1, n2) {
-
-            return parseInt(n1) - parseInt(n2);
-        }
-        break
-    case btnDivision.addEventListener("click"):
-        btnDivision.addEventListener("click", function () {
-            var n1 = inputUno.value;
-            var n2 = inputDos.value;
-            resultado.innerHTML = dividir(n1, n2);
-        });
-        function dividir(n1, n2) {
-
-            return parseInt(n1) / parseInt(n2);
-        }
-        break
-    case btnMultiplicar.addEventListener("click"):
-        btnMultiplicar.addEventListener("click", function () {
-            var n1 = inputUno.value;
-            var n2 = inputDos.value;
-            resultado.innerHTML = multi(n1, n2);
-        });
-        function multi(n1, n2) {
-
-            return parseInt(n1) * parseInt(n2);
-        }
-        break
-
-    default:
-        Sentencias a ejecutar si el valor no es ninguno de los anter
 }
