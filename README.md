@@ -6,6 +6,5 @@ entrega de desafios
 * [Desafío 1]
 
 
-*[pagina web]
-https://github.com/camila58/ICC713/tree/main/paginaWeb
-
+*[pagina web]  #https://github.com/camila58/ICC713/tree/main/paginaWeb
+#[Actividades]  
