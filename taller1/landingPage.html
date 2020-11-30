@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.html" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.js" />
+
+    <title>Comentarios</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="ctn-header">
+            <label class="lbl-header"></label>
+        </div>
+    </header>
+    <section class="page-section" id="contact">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Caja de Comentarios</h2>
+                <h3 class="section-subheading text-muted">Ingrese un comentario</h3>
+            </div>
+            <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                <div class="row align-items-stretch mb-5">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input class="form-control" id="name" type="text" placeholder="Tú nombre *"
+                                required="required" min="3" data-validation-required-message="Su nombre" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="form-group">
+                            <input type="date" id="start" name="trip-start" value="2020-11-30" min="2020-01-01"
+                                max="2022-12-31">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group form-group-textarea mb-md-0">
+                            <textarea class="form-control" id="comment" placeholder="Tú comentario*" required="required" maxlength="200"
+                                data-validation-required-message="Ingresar su comentario"></textarea>
+                            <p class="help-block text-danger"></p>
+                            <div id="contador">0/200</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div id="success"></div>
+                    <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" onclick="crearLista()" type="submit">Enviar
+                        mensaje</button>
+                </div>
+            </form>
+        </div>
+        <div class=" container-sm mt-3">
+            <div class="wrap">
+                <ul class="lista" id="lista">
+                    <li><a href="#"></a></li>
+                    <li><a href=""></a></li>
+
+                </ul>
+
+            </div>
+        </div>
+        <script  src="index.js">
+
+        </script>
+            
+    </section>
+</body>
+<!-- JQUERY -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!--FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<!-- Los iconos tipo Solid de Fontawesome-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+<script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+<!-- Nuestro css-->
+<link rel="stylesheet" type="text/css" href="static/css/index.css">
+
+
+</html>
