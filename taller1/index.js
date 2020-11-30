@@ -50,6 +50,12 @@
     for (var i =0; i < lista.children.length - 1; i++) {
         lista.children[i].addEventListener("click",eliminarComentario);
     }
+    mensaje.addEventListener('input', function(e) {
+        const target = e.target;
+        const longitudMax = target.getAttribute('maxlength');
+        const longitudAct = target.value.length;
+        contador.innerHTML = `${longitudAct}/${longitudMax}`;
+    });
 }());
 
 
