@@ -15,9 +15,11 @@
     "bootstrap": "^4.5.3",
     "bootstrap-vue": "^2.21.1",
     "core-js": "^3.8.1",
+    "express": "^4.17.1",
     "regenerator-runtime": "^0.13.7",
     "vue": "^2.6.12",
-    "vue-axios": "^2.1.5"
+    "vue-axios": "^2.1.5",
+    "vue-router": "^3.5.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
