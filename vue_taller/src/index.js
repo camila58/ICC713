@@ -4,8 +4,7 @@ const mongoose = require('mongoose');
 
 const app = express();
 // Connection to mongoDB
-mongoose.connect(`mongodb+srv://${process.env.USER}:${process.env.PASSWORD}@
-products.hlljm.mongodb.net/${process.env.DBNAME}?retryWrites=true&w=majority
+mongoose.connect(`mongodb+srv://camila:<password>@cluster0.h439f.mongodb.net/<dbname>?retryWrites=true&w=majority
 `, {
  useNewUrlParser: true,
  useCreateIndex: true,
